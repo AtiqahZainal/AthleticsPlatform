@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Athletics Leaderboard</title>
+</head>
+<body>
+  <h1>Live Leaderboard</h1>
+  <table border="1" id="leaderboard">
+    <tr>
+      <th>Competition</th>
+      <th>Event</th>
+      <th>Stage</th>
+      <th>Athlete</th>
+      <th>Club</th>
+      <th>Time</th>
+      <th>Position</th>
+    </tr>
+  </table>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
+
+<h2>Enter Result</h2>
+
+<form id="resultForm">
+
+  <label>Athlete:</label>
+  <select id="athlete_select"></select>
+
+  <label>Event:</label>
+  <select id="event_select"></select>
+
+  <label>Time:</label>
+  <input type="text" id="time" required>
+
+  <label>Position:</label>
+  <input type="number" id="position" required>
+
+  <button type="submit">Submit Result</button>
+
+</form>
